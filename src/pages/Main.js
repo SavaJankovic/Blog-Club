@@ -13,7 +13,7 @@ class Main extends React.Component {
 
 
   fetchPosts = () => {
-    service.fetchPost()
+    service.fetchPost() 
       .then(postObj => {
         this.setState({
           posts: postObj
@@ -32,8 +32,13 @@ class Main extends React.Component {
         <div className="card #26a69a teal lighten-1  ">
 
           <Link to={`/posts/${post.id}`} className="card-content white-text " key={post.id}>
-            <span className="card-title">{post.title}</span>
-            <p>{post.body}</p>
+          <br/>
+           <i className="medium material-icons">fingerprint</i> 
+           <br/>
+            <span className="card-title">"{post.title}"</span>
+            <h5>Description: </h5>
+
+            <h5>{post.body}</h5>
 
           </Link>
         </div>

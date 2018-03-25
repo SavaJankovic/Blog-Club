@@ -4,3 +4,9 @@
 .waves-effect{
     margin: 50px;
 }
+.card-image{
+    float: left;
+}
+.newAuthor {
+    margin-bottom: 100px;
+}

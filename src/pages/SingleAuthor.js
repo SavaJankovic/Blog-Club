@@ -31,24 +31,36 @@ class SingleAuthor extends React.Component {
 
     return (
       <React.Fragment>
+
+   <div className="card-stacked">
+          <div className="card-content">
+            <h5>ADDRESS</h5>
+         
+            <p>Street: {this.state.single.address.street}</p>
+            <p>City: {this.state.single.address.city}</p>
+            <p>Zipcode: {this.state.single.address.zipcode}</p>
+         
+          </div>
+        </div>
+
         <div className="card-image">
-          <iframe
+          {/* <iframe
             src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11322.276616522473!2d${this.state.single.address.geo.lng}!3d${this.state.single.address.geo.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1521898884474`}
             width="300"
             height="300"
             frameBorder="0"
             style={{ border: 0 }}
-            allowFullScreen></iframe>
+            allowFullScreen></iframe> */}
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176.9090889022772!2d20.46211521305976!3d44.81045201694973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aaf1f73ded9%3A0xded33187d4424d79!2sKralja+Milana+10%2C+Beograd+11000!5e0!3m2!1sen!2srs!4v1521981053776" 
+            width="472" 
+            height="381" 
+            frameBorder="0" 
+            style={{border:0}} 
+            allowFullScreen>
+            </iframe>
         </div>
-        <div className="card-stacked">
-          <div className="card-content">
-            <h5>ADDRESS</h5>
-            <p>Street: {this.state.single.address.street}</p>
-            <p>City: {this.state.single.address.city}</p>
-            <p>Zipcode: {this.state.single.address.zipcode}</p>
-
-          </div>
-        </div>
+     
       </React.Fragment>
     )
   }
@@ -83,7 +95,7 @@ class SingleAuthor extends React.Component {
         <div className="col s12 m7">
           <div className="card horizontal">
             <div className="card-image">
-              <img src="https://via.placeholder.com/300/300" />
+              <img src="https://neilpatel-qvjnwj7eutn3.netdna-ssl.com/wp-content/uploads/2018/03/how-writers-improve-blogging-skills.jpg" />
             </div>
             <div className="card-stacked">
               <div className="card-content">
@@ -113,7 +125,7 @@ class SingleAuthor extends React.Component {
               {this.renderCompany()}
             </div>
           </div >
-          <div className="center">
+          <div className="newAuthor center">
             <Link to="/newpost" className="waves-effect waves-light btn-large "><i className="material-icons right">save</i>New Post</Link>
           </div>
 
