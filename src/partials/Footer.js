@@ -1,15 +1,15 @@
 import React from "react";
 import "./Footer.css"
-const Footer = () =>{
+const Footer = () => {
 
 
-    return (
-        <footer className="page-footer #26a69a teal lighten-1">
-          <div className="container center">
+  return (
+    <footer className="page-footer #000000 black">
+      <div className="container center">
         <p> <i className="material-icons">battery_charging_full</i> Sons of Nenad  Lothbrok</p>
-          </div>
-      </footer>
-    )
+      </div>
+    </footer>
+  )
 }
 
 export default Footer;

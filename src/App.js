@@ -9,7 +9,7 @@ import About from "./pages/About";
 import ListAuthors from "./pages/ListAuthors";
 import SingleAuthor from "./pages/SingleAuthor";
 import NewPost from "./pages/NewPost";
-
+import EditPost from "./pages/EditPost"
 
 class App extends Component {
 
@@ -20,6 +20,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/posts" component={Main} />
           <Route path="/posts/:id" component={SinglePost} />
+          <Route path="/edit/:id" component={EditPost} />
           <Redirect exact from="/" to="/posts" />
           <Route exact path="/about" component={About} />
           <Route exact path="/authors" component={ListAuthors} />

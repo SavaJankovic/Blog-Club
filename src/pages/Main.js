@@ -13,7 +13,7 @@ class Main extends React.Component {
 
 
   fetchPosts = () => {
-    service.fetchPost() 
+    service.fetchPost()
       .then(postObj => {
         this.setState({
           posts: postObj
@@ -26,15 +26,18 @@ class Main extends React.Component {
     this.fetchPosts();
   }
 
+
+
+
   renderPost = (post) => {
     return (
       <div className="col s12 m12 center ">
-        <div className="card #26a69a teal lighten-1  ">
+        <div className="card #9e9e9e grey">
 
           <Link to={`/posts/${post.id}`} className="card-content white-text " key={post.id}>
-          <br/>
-           <i className="medium material-icons">fingerprint</i> 
-           <br/>
+            <br />
+            <i className="medium material-icons">fingerprint</i>
+            <br />
             <span className="card-title">"{post.title}"</span>
             <h5>Description: </h5>
 
