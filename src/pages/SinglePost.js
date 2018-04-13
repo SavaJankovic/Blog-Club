@@ -52,7 +52,7 @@ class SinglePost extends React.Component {
     e.preventDefault()
     console.log(this.props.match.params.id);
 
-    var url = 'http://localhost:3004/posts/' + this.props.match.params.id;
+    var url = 'http://localhost:3000/posts/' + this.props.match.params.id;
     var option = {
       method: 'DELETE',
       headers: new Headers({
@@ -93,7 +93,7 @@ class SinglePost extends React.Component {
                 return (
                   <Link to={`/posts/${post.id}`} key={post.id}>
                     <li>
-                      <i class="material-icons">gesture</i>  {post.title}
+                      <i className="material-icons">gesture</i>  {post.title}
                     </li>
                   </Link>
                 )

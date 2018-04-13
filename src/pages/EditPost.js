@@ -44,7 +44,7 @@ class EditPost extends React.Component {
     e.preventDefault()
     console.log(this.props.match.params.id);
 
-    var url = 'http://localhost:3004/posts/' + this.props.match.params.id;
+    var url = 'http://localhost:3000/posts/' + this.props.match.params.id;
     var option = {
       method: 'PUT',
       body: JSON.stringify({

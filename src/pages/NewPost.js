@@ -32,7 +32,7 @@ class NewPost extends React.Component {
   fetchPost = (e) => {
     e.preventDefault()
 
-    return fetch('http://localhost:3004/posts', {
+    return fetch('http://localhost:3000/posts', {
       method: "POST",
       body: JSON.stringify({
         title: this.state.newTitle,

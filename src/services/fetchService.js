@@ -5,7 +5,7 @@ class Service {
     constructor() { }
 
     fetchPost = () => {
-        return fetch('http://localhost:3004/posts')
+        return fetch('http://localhost:3000/posts')
             .then(response => response.json())
             .then(posts => {
                 return posts.reverse().map(post => {
@@ -16,7 +16,7 @@ class Service {
 
     }
     fetchPostfromAuthor = (userId) => {
-        return fetch(`http://localhost:3004/posts?userId=${userId}`)
+        return fetch(`http://localhost:3000/posts?userId=${userId}`)
             .then(response => response.json())
             .then(posts => {
                 return posts.slice(0, 3).map(post => {
@@ -26,7 +26,7 @@ class Service {
     }
 
     fetchAuthor = () => {
-        return fetch("http://localhost:3004/users")
+        return fetch("http://localhost:3000/users")
             .then(response => response.json())
             .then(authors => {
                 return authors.map(author => {
@@ -35,7 +35,7 @@ class Service {
             })
     }
     fetchSingleAuthor = (id) => {
-        return fetch(`http://localhost:3004/users/${id}`)
+        return fetch(`http://localhost:3000/users/${id}`)
             .then(response => response.json())
             .then(author => {
 
@@ -45,7 +45,7 @@ class Service {
     }
 
     fetchSinglePost = (id) => {
-        return fetch(`http://localhost:3004/posts/${id}`)
+        return fetch(`http://localhost:3000/posts/${id}`)
             .then(response => response.json())
             .then(post => {
 

@@ -32,7 +32,7 @@ class Main extends React.Component {
   renderPost = (post) => {
     return (
       <div className="col s12 m12 center ">
-        <div className="card #9e9e9e grey">
+        <div className="card bgC ">
 
           <Link to={`/posts/${post.id}`} className="card-content white-text " key={post.id}>
             <br />
